@@ -190,7 +190,7 @@ Select *,
 					) row_num
 
 From PortfolioProject.dbo.NashvilleHousing
---order by ParcelID
+--order by ParcelID doesnt work because there is window function
 )
 Select *
 From RowNumCTE
